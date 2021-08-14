@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+    
+    --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+    --clr-neutral-desatured-blue: hsl(224, 23%, 55%);
+    --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 375px;
+    
+
+}
+
+body {
+    background: var(--clr-primary-pale-blue);
+    
+}
+
+#hero {
+    width: 350px;
+    border-radius: 25px 25px 0 0;
+    
+}
+
+#card {
+    background: white;
+    width: 350px;
+    height: 570px;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    border-radius: 25px;
+}
+
+
+.main_header {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 25px;
+    font-weight: 900;
+    
+}
+
+
+.main_paragraph {
+    font-size: 15px;
+    width: 25ch;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:hsla(0, 0%, 0%, 0.5);
+    line-height: 1.6;
+    
+}
+
+#plan_card{
+    background: var(--clr-neutral-pale-blue);
+    width: 300px;
+    height: 75px; 
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+#music_icon {
+    position: absolute;
+    left: 20px;
+    top: 14px;
+}
+
+.annual_plan {
+    padding-top: 15px;
+    text-align:center;
+    font-size: 15px;
+    margin: 5px;
+}
+
+
+.pricing {
+    text-align: center;
+    font-size: 15px;
+    color: hsla(0, 0%, 0%, 0.5)
+    
+}
+
+.change {
+    float: right;
+    position: absolute;
+    right: 45px;
+    bottom: 177px;
+    font-size: 14px;
+    color: var(--clr-primary-bright-blue);
+}
+
+.change:hover {
+    cursor: pointer;
+    color: gray;
+
+}
+
+.payment_button {
+    position: absolute;
+    bottom: 80px;
+    left: 30px;
+    background: var(--clr-primary-bright-blue);
+    border: hidden;
+    color: white;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0px 10px 6px hsla(0, 0%, 0%, 0.1);
+
+
+}
+
+.payment_button:hover {
+    cursor: pointer;
+    background: rgb(104, 119, 255);
+    color: black;
+}
+
+
+.cancel_button {
+    position: absolute;
+    bottom: 30px;
+    left: 120px;
+    font-size: 16px;
+    
+    
+}
+
+
+.cancel_button:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Desktop media */
+@media (min-width: 500px) {
+
+
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+    }
+
+    .cancel_button {
+        background: none;
+        border: none;
+    }
+
+    .annual_plan {
+
+        margin-left: -50px;
+
+    }
+    .pricing{
+        margin-left: -60px;
+    }
+
+}
